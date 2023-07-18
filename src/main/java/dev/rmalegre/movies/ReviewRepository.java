@@ -1,4 +1,6 @@
 package dev.rmalegre.movies;
+import org.bson.types.ObjectId;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
-public class ReviewRepository {
+public interface ReviewRepository extends MongoRepository<Review, ObjectId> {
 }
